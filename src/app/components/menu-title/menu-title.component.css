@@ -1,0 +1,13 @@
+.menu-title-container > h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 135px;
+  color: white;
+  padding: 10px 0 10px 0;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menu-title-container > hr {
+  margin: 20px 0 5px 0;
+}
