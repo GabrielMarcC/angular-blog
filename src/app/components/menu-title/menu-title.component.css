@@ -11,3 +11,9 @@
 .menu-title-container > hr {
   margin: 20px 0 5px 0;
 }
+
+@media screen and (max-width: 750px) {
+  .menu-title-container > h1 {
+    font-size: 70px;
+  }
+}

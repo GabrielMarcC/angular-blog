@@ -1,0 +1,12 @@
+<div class="container-main">
+  <div class="container-content" *ngFor="let comment of comments">
+    <div *ngIf="comments && comment.postId.toString() == id">
+      <app-big-card
+        posterId="{{ comment.postId }}"
+        name="{{ comment.name }}"
+        body="{{ comment.body }}"
+      ></app-big-card>
+    </div>
+  </div>
+  <div class="btn-back"><button [routerLink]="['']">Voltar</button></div>
+</div>

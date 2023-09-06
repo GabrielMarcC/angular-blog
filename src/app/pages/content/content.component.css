@@ -1,0 +1,52 @@
+.container-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-content {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.btn-back {
+  width: 80px;
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+
+.btn-back > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+  background-color: gray;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-back > button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 1380px) {
+  .container-main {
+    flex-direction: column;
+  }
+
+  .container-content {
+  }
+}

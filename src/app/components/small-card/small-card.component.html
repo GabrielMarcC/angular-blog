@@ -1,16 +1,18 @@
-<div class="container-small-card">
-  <div class="container-small-content">
-    <div class="small-card-img">
-      <img
-        src="https://ovicio.com.br/wp-content/uploads/The-CW-Legends-of-Tomorrow-Arrow-The-Flash-Supergirl.jpg"
-        alt=""
-      />
+<div class="container-small-card" *ngFor="let post of posts">
+  <div class="card">
+    <div class="container-small-content">
+      <div class="small-card-title">
+        <h2>
+          <a>{{ post.title }}</a>
+        </h2>
+        <p>{{ post.body }}</p>
+      </div>
+      <div class="container-btn">
+        <button class="btn-comments" [routerLink]="['/content', post.id]">
+          See comments
+        </button>
+      </div>
     </div>
-    <div class="small-card-title">
-      <h2><a>Titulo</a></h2>
-    </div>
-  </div>
-  <div class="small-card-separtor">
-    <hr />
+    <div class="small-card-separtor"></div>
   </div>
 </div>
